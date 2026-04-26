@@ -37,7 +37,7 @@ nav a:hover {
 
 .hero {
     min-height: 85vh;
-    background: linear-gradient(rgba(61,43,47,0.45), rgba(61,43,47,0.45)),
+    background: linear-gradient(rgba(61, 43, 47, 0.50), rgba(61, 43, 47, 0.50)),
     url("https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=1400&q=80");
     background-size: cover;
     background-position: center;
@@ -47,15 +47,19 @@ nav a:hover {
     color: white;
 }
 
+.hero-content {
+    max-width: 700px;
+}
+
 .hero h2 {
     font-size: 48px;
     margin-bottom: 20px;
-    max-width: 700px;
 }
 
 .hero p {
     font-size: 20px;
     margin-bottom: 30px;
+    line-height: 1.6;
 }
 
 .btn {
@@ -82,7 +86,16 @@ section {
     text-align: center;
     font-size: 36px;
     color: #b85f78;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
+}
+
+.texto-centro {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 35px;
+    font-size: 19px;
+    line-height: 1.7;
+    color: #5c464c;
 }
 
 .cards {
@@ -108,6 +121,7 @@ section {
 .card p {
     color: #6c555b;
     line-height: 1.6;
+    font-size: 17px;
 }
 
 .sobre {
@@ -120,13 +134,14 @@ section {
     line-height: 1.8;
     margin-bottom: 18px;
     text-align: center;
+    color: #5c464c;
 }
 
 .contato {
     background: linear-gradient(135deg, #d9879b, #b85f78);
     color: white;
     text-align: center;
-    min-height: 70vh;
+    min-height: 75vh;
 }
 
 .contato h2 {
@@ -136,7 +151,18 @@ section {
 
 .contato p {
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.contato a {
+    color: white;
+    font-weight: bold;
+}
+
+.info-contato {
+    max-width: 800px;
+    margin: 30px auto;
 }
 
 footer {
@@ -144,6 +170,20 @@ footer {
     color: white;
     text-align: center;
     padding: 22px;
+}
+
+.whatsapp-fixed {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    background-color: #25d366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    z-index: 999;
 }
 
 @media (max-width: 768px) {
@@ -163,5 +203,13 @@ footer {
 
     .hero h2 {
         font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .titulo {
+        font-size: 30px;
     }
 }
