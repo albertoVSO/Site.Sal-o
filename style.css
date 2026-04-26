@@ -71,6 +71,7 @@ nav a:hover {
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s;
+    margin: 8px;
 }
 
 .btn:hover {
@@ -87,15 +88,6 @@ section {
     font-size: 36px;
     color: #b85f78;
     margin-bottom: 25px;
-}
-
-.texto-centro {
-    text-align: center;
-    max-width: 850px;
-    margin: 0 auto 35px;
-    font-size: 19px;
-    line-height: 1.7;
-    color: #5c464c;
 }
 
 .cards {
@@ -172,11 +164,11 @@ footer {
     padding: 22px;
 }
 
-.whatsapp-fixed {
+.whatsapp-fixed,
+.instagram-fixed,
+.maps-fixed {
     position: fixed;
     right: 22px;
-    bottom: 22px;
-    background-color: #25d366;
     color: white;
     padding: 15px 20px;
     border-radius: 50px;
@@ -184,6 +176,28 @@ footer {
     font-weight: bold;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
     z-index: 999;
+    transition: 0.3s;
+}
+
+.whatsapp-fixed {
+    bottom: 22px;
+    background-color: #25d366;
+}
+
+.instagram-fixed {
+    bottom: 82px;
+    background-color: #E1306C;
+}
+
+.maps-fixed {
+    bottom: 142px;
+    background-color: #4285F4;
+}
+
+.whatsapp-fixed:hover,
+.instagram-fixed:hover,
+.maps-fixed:hover {
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
